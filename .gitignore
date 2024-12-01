@@ -1,0 +1,9 @@
+*.DS_Store
+build/*
+install/*
+log/*
+.vscode/*
+.dvc
+__pycache__/
+*.py[cod]
+*$py.class
