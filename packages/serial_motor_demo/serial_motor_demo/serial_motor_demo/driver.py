@@ -96,7 +96,7 @@ class MotorDriver(Node):
 
     def motor_command_callback(self, motor_command):
         if (motor_command.is_pwm):
-            self.send_pwm_motor_command(motor_command.speed_left, motor_command.speed_right)
+            self.send_pwm_motor_command(-motor_command.speed_right, -motor_command.speed_left)
         else:
             # counts per loop = req rads/sec X revs/rad X counts/rev X secs/loop 
             scaler = (1 / (2*math.pi)) * self.get_parameter('encoder_cpr').value * (1 / self.get_parameter('loop_rate').value)
