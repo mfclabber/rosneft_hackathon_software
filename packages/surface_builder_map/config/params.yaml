@@ -1,0 +1,5 @@
+surface_map_node:
+  ros__parameters:
+    depth_topic: "/camera/camera/depth/color/points"
+    color_topic: "/camera/camera/depth/image_rect_raw"
+    frame_id: "map"

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>surface_map</name>
+  <name>surface_builder_map</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
   <maintainer email="novichkovdmitriy04@gmail.com">itmo</maintainer>
@@ -9,12 +9,14 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <depend>rclcpp</depend>
-  <depend>grid_map_core</depend>
-  <depend>grid_map_ros</depend>
-
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
+  
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>grid_map_ros</depend>
+  <depend>grid_map_msgs</depend>
 
   <export>
     <build_type>ament_cmake</build_type>
